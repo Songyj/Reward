@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Reward</string>
+    <string-array name="test_string_array">
+        <item>请选择表彰项目</item>
+        <item>锦旗表彰</item>
+        <item>表扬信表彰</item>
+        <item>拒收红包</item>
+        <item>口头表彰</item>
+        <item>其他表彰</item>
+
+    </string-array>
+</resources>

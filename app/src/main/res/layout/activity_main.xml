@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+ >
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/titlegray"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:text="表彰申请"
+        android:textColor="@color/darkgray"
+        android:textSize="20dp"/>
+    <Spinner
+        android:id="@+id/text_spinner"
+        android:layout_width="280dp"
+        android:layout_height="36dp"
+        android:dropDownWidth="match_parent"
+        android:background="@drawable/array"
+
+
+        >
+    </Spinner>
+    <com.example.songyanjun.reward.UI.BorderTextView
+        android:id="@+id/text_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:hint="点此选择日期"
+        android:textColorHint="@color/lightgray"
+        android:textColor="@color/darkgray"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/circle"
+        />
+
+    <com.example.songyanjun.reward.UI.BorderEditText
+        android:id="@+id/text_person"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:hint="被表彰人"
+        android:textColorHint="@color/lightgray"
+        android:textColor="@color/darkgray"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/circle"
+        android:cursorVisible="false"
+
+        />
+    <com.example.songyanjun.reward.UI.BorderEditText
+        android:id="@+id/text_situation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingTop="5dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="5dp"
+        android:hint="情况说明"
+        android:textColorHint="@color/lightgray"
+        android:textColor="@color/darkgray"
+        android:textSize="15dp"
+        android:drawableLeft="@drawable/circle"
+        android:cursorVisible="false"
+
+    />
+    <Button
+        android:id="@+id/Btn_upload"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:text="上传图片证明"
+        android:textColor="@color/darkgray"/>
+    <Button
+        android:id="@+id/Btn_submit"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@color/green"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:text="表彰提交"
+        android:textSize="15dp"
+        android:textColor="@color/lightgreen"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>
